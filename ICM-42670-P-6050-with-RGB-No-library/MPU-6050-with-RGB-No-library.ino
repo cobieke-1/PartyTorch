@@ -1,6 +1,6 @@
 #include <Wire.h>
 const int IMU_i2c_addr = 0x68; // IMU is ICM-42670-P
-int gyro_x, gyro_y, gyro_z;
+long gyro_x, gyro_y, gyro_z;
 long gyro_x_cal, gyro_y_cal, gyro_z_cal;
 boolean set_gyro_angles;
 
@@ -119,7 +119,7 @@ void setup_imc_42670_P_registers(){
   Wire.write(0x1F); //register: PWR_MGMT0
 
   // reset power management:
-  Wire.write(0x50);
+  Wire.write(0x70);
 
   //End Transmission
   Wire.endTransmission();
