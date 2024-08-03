@@ -1,7 +1,7 @@
-int red = 9; //10
-int green = 10; //9
-int blue = 6;
-
+int red = 10; 
+int green = 11;
+int blue = 9;
+// Red 10, Blue 9, Green 11
 int redValue;
 int greenValue;
 int blueValue;
@@ -10,7 +10,7 @@ int blueValue;
 #define maxBrightness 255 // max possible is 255
 
 void setup() {
-//  Serial.begin(9600);
+
 pinMode(red, OUTPUT);
 pinMode(green, OUTPUT);
 pinMode(blue, OUTPUT);
